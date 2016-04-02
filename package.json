@@ -1,0 +1,20 @@
+{
+  "name": "generator-p5",
+  "version": "1.0.0-alpha.1",
+  "description": "Yeoman generator for a p5 project",
+  "repository": {
+    "url": "https://github.com/pflannery/p5-yeoman-generator"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "p5"
+  ],
+  "files": [
+    "app"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "~0.22",
+    "glob": "~7.0"
+  }
+}
