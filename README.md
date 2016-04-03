@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/generator-p5.svg)](https://www.npmjs.org/package/generator-p5)
 
-A yeoman generator for a p5 project
+A [yeoman](http://yeoman.io) generator for a p5 project
 
 ## Install
 
