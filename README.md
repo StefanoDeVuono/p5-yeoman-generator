@@ -4,8 +4,14 @@
 
 A yeoman generator for a p5 project
 
+## Install
+
+- `npm install generator-yo`
+
 ## Usage
 
+- `mkdir %your-project-dir%`
+- `cd %your-project-dir%`
 - `yo p5`
 
 ### License
