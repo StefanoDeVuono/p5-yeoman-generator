@@ -27,6 +27,9 @@ module.exports = generators.Base.extend({
           self.props
         );
       });
+    },
+    depInstall: function(){
+      this.bowerInstall();
     }
   }
 });

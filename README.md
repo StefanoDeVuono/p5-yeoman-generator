@@ -5,9 +5,9 @@
 
 A [yeoman](http://yeoman.io) generator for a p5 project
 
-## Install
+## Getting Started
 
-- `npm install generator-yo`
+http://yeoman.io/learning/
 
 ## Usage
 
