@@ -9,6 +9,10 @@ A [yeoman](http://yeoman.io) generator for a p5 project
 
 http://yeoman.io/learning/
 
+## Install the Generator
+
+- `npm i -g generator-p5`
+
 ## Usage
 
 - `mkdir %your-project-dir%`
