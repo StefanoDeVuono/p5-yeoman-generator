@@ -22,6 +22,8 @@ before(function(t) {
 
 test('p5-yeoman-generator creates files', function(t) {
   assert.file([
+    'package.json',
+    '.gitignore',
     'bower.json',
     'favicon.ico',
     'gulpfile.js',

@@ -29,7 +29,7 @@ module.exports = generators.Base.extend({
       });
     },
     depInstall: function(){
-      this.npmInstall(['gulp', 'browser-sync'], { 'saveDev': true });
+      this.npmInstall();
       this.bowerInstall();
     }
   }
