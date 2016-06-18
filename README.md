@@ -11,6 +11,7 @@ http://yeoman.io/learning/
 
 ## Install the Generator
 
+- (If you haven't already installed it, install yeoman: `npm install -g yo`).
 - `npm i -g generator-p5`
 
 ## Usage
