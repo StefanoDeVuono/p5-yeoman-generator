@@ -16,7 +16,7 @@
   "dependencies": {
     "browser-sync": "^2.13.0",
     "glob": "~7.0",
-    "yeoman-generator": "~0.22"
+    "yeoman-generator": "^0.23.4"
   },
   "devDependencies": {
     "faucet": "0.0.1",
