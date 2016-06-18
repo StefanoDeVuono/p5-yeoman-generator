@@ -11,20 +11,19 @@ http://yeoman.io/learning/
 
 ## Alpha Mode
 
-  - `git clone https://github.com/StefanoDeVuono/p5-yeoman-generator/tree/server`
+  - `git clone -b server https://github.com/StefanoDeVuono/p5-yeoman-generator`
   - `cd p5-yeoman-generator`
   - `npm link`
 
-## Install the Generator
+## Install Yeoman
 
 - (If you haven't already installed it, install yeoman: `npm install -g yo`).
-- `npm i -g generator-p5`
 
 ## Usage
 
 - `mkdir %your-project-dir%`
 - `cd %your-project-dir%`
-- `yo p5`
+- `yo p5js`
 - `gulp serve`
 
 ### License
