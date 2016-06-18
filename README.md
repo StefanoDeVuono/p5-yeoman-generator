@@ -9,6 +9,12 @@ A [yeoman](http://yeoman.io) generator for a p5 project, based off of [pflannery
 
 http://yeoman.io/learning/
 
+## Alpha Mode
+
+  - `git clone https://github.com/StefanoDeVuono/p5-yeoman-generator/tree/server`
+  - `cd p5-yeoman-generator`
+  - `npm link`
+
 ## Install the Generator
 
 - (If you haven't already installed it, install yeoman: `npm install -g yo`).
