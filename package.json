@@ -1,9 +1,9 @@
 {
-  "name": "generator-p5",
+  "name": "generator-p5js",
   "version": "1.0.0-alpha.2",
   "description": "Yeoman generator for a p5 project",
   "repository": {
-    "url": "https://github.com/pflannery/p5-yeoman-generator"
+    "url": "https://github.com/StefanoDeVuono/p5-yeoman-generator"
   },
   "keywords": [
     "yeoman-generator",
@@ -14,7 +14,22 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "~0.22",
-    "glob": "~7.0"
+    "browser-sync": "^2.13.0",
+    "glob": "~7.0",
+    "yeoman-generator": "~0.22"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-nsp": "^2.4.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-tape": "0.0.9",
+    "rewire": "^2.5.1",
+    "tape": "^4.5.1",
+    "tape-catch": "^1.0.5"
   }
 }
