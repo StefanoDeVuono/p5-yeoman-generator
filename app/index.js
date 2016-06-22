@@ -1,12 +1,12 @@
 'use strict';
 var generators = require('yeoman-generator');
 var glob = require('glob');
+var fs = require('fs');
 
 module.exports = generators.Base.extend({
   writing: {
     templatedFiles: function() {
       var templateFiles = glob.sync('templates/**/_*', { nodir: true, cwd: __dirname });
-      console.log('templateFiles', templateFiles);
       var self = this;
       templateFiles.forEach(function(filePath) {
         var templatePath = filePath.replace('templates/', '');
@@ -28,6 +28,11 @@ module.exports = generators.Base.extend({
           self.props
         );
       });
+    },
+    assetsDirectory: function(){
+      var assetsDir = 'templates/assets/';
+      var assetsPath = assetsDir.replace('templates/', '');
+      fs.mkdirSync(this.destinationPath(assetsPath));
     },
     depInstall: function(){
       this.npmInstall();
