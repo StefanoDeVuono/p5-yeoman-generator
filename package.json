@@ -37,5 +37,6 @@
     "rewire": "^2.5.1",
     "tape": "^4.5.1",
     "tape-catch": "^1.0.5"
-  }
+  },
+  "author": "Stefano De Vuono <io@stefanodevuono.com> (http://stefanodevuono.com)"
 }
