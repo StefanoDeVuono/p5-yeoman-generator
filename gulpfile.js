@@ -27,7 +27,8 @@ gulp.task('pre-test', function () {
 });
 
 gulp.task('test', ['pre-test'], function (cb) {
-  var tapeErr;
+  var tapeErr,
+      exitCode;
 
   gulp.src('test/**/*.js')
     .pipe($.plumber())
@@ -38,6 +39,8 @@ gulp.task('test', ['pre-test'], function (cb) {
     .pipe($.istanbul.writeReports())
     .on('end', function () {
       cb(tapeErr);
+      exitCode = tapeErr ? 1 : 0;
+      process.exit(exitCode);
     });
 });
 

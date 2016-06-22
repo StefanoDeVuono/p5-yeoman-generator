@@ -6,6 +6,7 @@ module.exports = generators.Base.extend({
   writing: {
     templatedFiles: function() {
       var templateFiles = glob.sync('templates/**/_*', { nodir: true, cwd: __dirname });
+      console.log('templateFiles', templateFiles);
       var self = this;
       templateFiles.forEach(function(filePath) {
         var templatePath = filePath.replace('templates/', '');

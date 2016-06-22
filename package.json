@@ -1,13 +1,19 @@
 {
   "name": "generator-p5js",
-  "version": "1.0.0-alpha.2",
-  "description": "Yeoman generator for a p5 project",
+  "version": "1.0.0-beta.2",
+  "description": "Yeoman generator for a p5 project forked from https://github.com/pflannery/p5-yeoman-generator now with an added browser sync'd server. Just load it up with `yo p5js` and run `gulp serve`.",
   "repository": {
     "url": "https://github.com/StefanoDeVuono/p5-yeoman-generator"
   },
+  "scripts": {
+    "test": "gulp test"
+  },
   "keywords": [
     "yeoman-generator",
-    "p5"
+    "p5",
+    "p5.js",
+    "p5js",
+    "gulp"
   ],
   "files": [
     "app"

@@ -28,7 +28,8 @@ test('p5-yeoman-generator creates files', function(t) {
     'favicon.ico',
     'gulpfile.js',
     'index.html',
-    'sketch.js'
+    'sketch.js',
+    'assets'
   ]);
   t.end();
 });
