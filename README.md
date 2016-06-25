@@ -12,6 +12,9 @@ http://yeoman.io/learning/
 ## Install Yeoman (and bower and gulp)
 
 - (If you haven't already installed it, install yeoman: `npm install -g yo gulp bower`).
+- If you're having trouble with permissions, [npm recommends the following](https://docs.npmjs.com/getting-started/fixing-npm-permissions):
+  - `npm config get prefix` (**Important**: It should show `/usr/local` if not, follow option two [here]((https://docs.npmjs.com/getting-started/fixing-npm-permissions)))
+  - `sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}`
 
 ## Usage
 
