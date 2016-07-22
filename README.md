@@ -19,7 +19,7 @@ http://yeoman.io/learning/
 ## Usage
 
 - Assuming you have a directory called $DIRECTORY_NAME:
-- `npm install -g p5js`
+- `npm install -g generator-p5js`
 - `mkdir $DIRECTORY_NAME`
 - `cd $DIRECTORY_NAME`
 - `yo p5js`
