@@ -30,7 +30,7 @@ gulp.task('test', ['pre-test'], function (cb) {
   var tapeErr,
       exitCode;
 
-  gulp.src('test/**/*.js')
+  gulp.src('test/test.js')
     .pipe($.plumber())
     .pipe($.tape({ reporter: faucet() }))
     .on('error', function (err) {

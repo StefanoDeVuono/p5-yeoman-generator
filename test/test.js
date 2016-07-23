@@ -7,17 +7,25 @@ var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 var rewire = require('rewire');
 var gulp = require('gulp');
+var semver = require('semver');
 var gulpfile = rewire('../app/templates/gulpfile');
 var sketch = rewire('../app/templates/sketch');
 var fs = require('fs');
 
-before(function(t) {
+before('preparing tests...', function(t) {
   helpers.run(path.join(__dirname, '../app'))
     .withPrompts({someAnswer: true})
     .toPromise()
     .then(function(){
       t.end();
     });
+});
+
+test('versioning is correct', function(t){
+  var file = fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8');
+  var version = JSON.parse(file).version;
+  t.ok(semver(version));
+  t.end();
 });
 
 test('p5-yeoman-generator creates files', function(t) {
