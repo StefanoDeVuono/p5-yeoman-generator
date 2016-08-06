@@ -1,7 +1,8 @@
 # p5 Yeoman Generator
 
-[![NPM version](https://img.shields.io/npm/v/generator-p5.svg)](https://www.npmjs.org/package/generator-p5)
-[![NPM downloads](https://img.shields.io/npm/dm/generator-p5.svg)](https://npmjs.org/package/generator-p5 "View this project on NPM")
+[![NPM version](https://img.shields.io/npm/v/generator-p5js.svg)](https://www.npmjs.org/package/generator-p5js)
+[![NPM downloads](https://img.shields.io/npm/dm/generator-p5js.svg)](https://npmjs.org/package/generator-p5js "View this project on NPM")
+[![Coverage Status](https://coveralls.io/repos/github/StefanoDeVuono/p5-yeoman-generator/badge.svg)](https://coveralls.io/github/StefanoDeVuono/p5-yeoman-generator)
 
 A [yeoman](http://yeoman.io) generator for a p5 project, based off of [pflannery's p5 generator](https://github.com/pflannery/p5-yeoman-generator/blob/master/README.md)
 
