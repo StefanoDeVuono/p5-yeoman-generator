@@ -36,8 +36,11 @@ gulp.task('test', ['pre-test'], function (cb) {
     .on('error', function (err) {
       tapeErr = err;
     })
-    .pipe($.istanbul.writeReports())
-    .on('end', function () {
+    .pipe($.istanbul.writeReports({
+      reporters: ['cobertura', 'lcov']
+    }))
+    .on('end', function (a,b,c) {
+      gulp.src('test/coverage/lcov.info').pipe(coveralls());
       cb(tapeErr);
       exitCode = tapeErr ? 1 : 0;
       process.exit(exitCode);
