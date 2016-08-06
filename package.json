@@ -24,6 +24,7 @@
     "browser-sync": "^2.13.0",
     "glob": "~7.0",
     "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
     "yeoman-generator": "^0.23.4"
   },
   "devDependencies": {
