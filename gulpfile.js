@@ -40,7 +40,7 @@ gulp.task('test', ['pre-test'], function (cb) {
       reporters: ['cobertura', 'lcov']
     }))
     .on('end', function (a,b,c) {
-      gulp.src('test/coverage/lcov.info').pipe(coveralls());
+      gulp.src('test/coverage/lcov.info').pipe($.coveralls());
       cb(tapeErr);
       exitCode = tapeErr ? 1 : 0;
       process.exit(exitCode);
