@@ -37,15 +37,21 @@ gulp.task('test', ['pre-test'], function (cb) {
       tapeErr = err;
     })
     .pipe($.istanbul.writeReports({
-      reporters: ['cobertura', 'lcov']
+      reporters: ['lcovonly']
     }))
-    .on('end', function (a,b,c) {
-      gulp.src('coverage/lcov.info').pipe($.coveralls());
+    .on('end', function () {
       cb(tapeErr);
       exitCode = tapeErr ? 1 : 0;
       process.exit(exitCode);
     });
 });
+
+gulp.task('coveralls', function() {
+  gulp.src('coverage/lcov.info')
+    .pipe($.coveralls()).on('end', function(){
+      console.log('sent to coveralls');
+    })
+})
 
 gulp.task('watch', function () {
   gulp.watch(['generators/**/*.js', 'test/**'], ['test']);
